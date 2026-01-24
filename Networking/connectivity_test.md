@@ -18,5 +18,6 @@ Network connectivity was successfully established between Kali Linux and the Win
 
 ##Evidence
 ## Evidence
-![Successful ping from Kali to Windows](../images/ping success 1.png)
+![Successful ping from Kali to Windows](../images/pingsuccess1.png)
+
 
