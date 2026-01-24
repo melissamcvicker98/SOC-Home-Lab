@@ -16,3 +16,8 @@ Verify network connectivity between Kali Linux and Windows endpoint to support a
 ## Result
 Network connectivity was successfully established between Kali Linux and the Windows endpoint.
 
+##Evidence
+## Evidence
+![Successful ping from Kali to Windows](../images/ping_success1.png)
+![Successful ping from Kali to Windows](../images/ping_success2.png)
+
