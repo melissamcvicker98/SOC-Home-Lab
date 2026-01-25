@@ -1,11 +1,11 @@
 # Sysmon Installation & Configuration (SOC Home Lab)
 
-## 📌 Objective
+## Objective
 Deploy Microsoft Sysmon on a Windows endpoint to collect high-fidelity host-based telemetry (process creation, network connections, file creation, and more) as part of a Security Operations Center (SOC) home lab.
 
 ---
 
-## 🛠️ Tools & Technologies
+## Tools & Technologies
 - **Operating System:** Windows 11 (Virtual Machine)
 - **Monitoring Tool:** Sysmon (Sysinternals)
 - **Configuration:** Olaf Hartong Sysmon Modular Configuration
@@ -13,7 +13,7 @@ Deploy Microsoft Sysmon on a Windows endpoint to collect high-fidelity host-base
 
 ---
 
-## 📂 Lab Environment
+## Lab Environment
 - **Host:** Windows VM
 - **Directory:** `C:\Sysmon`
 - **Sysmon Version:** v15.15
@@ -21,7 +21,7 @@ Deploy Microsoft Sysmon on a Windows endpoint to collect high-fidelity host-base
 
 ---
 
-## ⚙️ Installation Steps
+## Installation Steps
 
 ### 1. Create Sysmon Directory
 ```powershell
