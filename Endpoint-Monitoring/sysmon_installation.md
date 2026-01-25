@@ -24,7 +24,6 @@ Deploy Microsoft Sysmon on a Windows endpoint to collect high-fidelity host-base
 ## Installation Steps
 
 ### 1. Create Sysmon Directory
-```powershell
 mkdir C:\Sysmon
 
 ### 2. Download Sysmon
