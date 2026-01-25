@@ -27,30 +27,34 @@ Deploy Microsoft Sysmon on a Windows endpoint to collect high-fidelity host-base
 mkdir C:\Sysmon
 
 ### 2. Download Sysmon
---Downloaded Sysmon from Microsoft Sysinternals
---Extracted files into C:\Sysmon
+Downloaded Sysmon from Microsoft Sysinternals
+Extracted files into C:\Sysmon
 
 ### 3. Obtain Sysmon XML Configuration
-**Ran into browser file-type handling issues, so the configuratiion was downloaded directly using PowerShell
---PowerShell code used: Invoke-WebRequest -Uri https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/sysmonconfig.xml -OutFile C:\Sysmon\sysmonconfig.xml
+Ran into browser file-type handling issues, so the configuratiion was downloaded directly using PowerShell
+PowerShell code used: Invoke-WebRequest -Uri https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/sysmonconfig.xml -OutFile C:\Sysmon\sysmonconfig.xml
 
 ### 4. Installed Sysmon as Admin
---PowerShell was launched as Administrator and the following code was used to install the Sysmon service and driver:
+PowerShell was launched as Administrator and the following code was used to install the Sysmon service and driver:
 cd C:\Sysmon
 .\Sysmon64.exe -accepteula -i sysmonconfig.xml
 
 ### 5. Validation and Verification
---Confirmed the Sysmon Service Status from the following code:
+Confirmed the Sysmon Service Status from the following code:
 Get-Service Sysmon*
---Result from code:
+
+Result from code:
 Status   Name        DisplayName
 Running  Sysmon64    Sysmon64
---Generated Test Activity using the following code:
+
+Test Activity using the following code:
 notepad.exe
 calc.exe
 ping 8.8.8.8
---Verified Event Logs by nabigating to Event Viewer --> Applications and Services Logs --> Microsoft --> Windows --> Sysmon --> Operational
---Events Observed--
+
+Verified Event Logs by nabigating to Event Viewer --> Applications and Services Logs --> Microsoft --> Windows --> Sysmon --> Operational
+
+Events Observed
 Event ID 1: Process Creation (image attached)
 Event ID 3: Network Connection (image attached)
 
