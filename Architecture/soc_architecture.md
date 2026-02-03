@@ -48,7 +48,7 @@ Detections are mapped to:
 
 ---
 
-##Key Takeaways 
+## Key Takeaways 
 -Improved understanding of SOC workflowd
 Experience prioritizing alerts based on risk 
 Strengthened ability to translate technical findings into busines impact 
