@@ -54,7 +54,7 @@ Block / Restricted flows:
 ---
 
 ### Network Telemetry Collected 
-## Splunk Inputs
+Splunk Inputs
 - Forwarder port: TCP 9997
 - Splunk Web: 8000
 - Data sources (related to networking)
@@ -62,7 +62,7 @@ Block / Restricted flows:
   - Sysmon Event ID 22 - DNS queries 
   - Windows Security Logs (when enabled)
 
-## Why this telemetry matters:
+Why this telemetry matters:
 - Detect suspicious outbound connections
 - Identification of unusual ports or destinations
 - Identify lateral movement attempts
@@ -71,11 +71,11 @@ Block / Restricted flows:
 ---
 
 ### Configuration Notes 
-## IP Addressing 
+IP Addressing 
 - IPs assigned dynamically via VMware NAT
 - All VMs share the same private subnet
 - No static IPs required for lab functionality
-## Splunk Forwarder Configuration 
+Splunk Forwarder Configuration 
 - Forwarder installed on Windows 11 endpoint
 - Configured to send logs to Splunk on TCP 9997
 - Connectivity validated using: Test-NetConnection <splunk_ip> -Port 9997
