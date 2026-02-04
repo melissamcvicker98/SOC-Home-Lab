@@ -1,13 +1,28 @@
-```mermaid
-flowchart LR
-  Host[Host Machine\nBrowser/Admin] -->|Splunk Web UI 8000/TCP| Splunk[Splunk Server VM]
+      [ Host Machine ]
+             (Browser / Admin Tools)
+                      |
+                      | 8000/TCP (Splunk Web)
+                      v
+            +----------------------+
+            |   Splunk Server VM   |
+            |   (SIEM / Indexer)   |
+            |   9997/TCP listener  |
+            +----------+-----------+
+                       ^
+                       | 9997/TCP (UF → Splunk)
+                       |
+            +----------+-----------+
+            |   Windows 11 VM      |
+            | Endpoint + UF + Sysmon|
+            +----------+-----------+
+                       ^
+                       | Controlled testing traffic
+                       |
+            +----------+-----------+
+            |     Kali Linux VM    |
+            |       Attacker       |
+            +----------------------+
 
-  subgraph NAT[VMware NAT Network\n(private virtual subnet)]
-    Win[Windows 11 VM\nEndpoint + Universal Forwarder] -->|Log forwarding 9997/TCP| Splunk
-    Kali[Kali Linux VM\nAttacker] -->|Controlled testing traffic| Win
-  end
-
-  NAT --> Internet[(Internet)]:::cloud
-
-  classDef cloud fill:#fff,stroke:#999,stroke-dasharray: 5 5;
+      All VMs are on the same VMware NAT network (private subnet),
+      with outbound internet access via NAT.
 
