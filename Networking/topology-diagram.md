@@ -1,7 +1,9 @@
-      [ Host Machine ]
+---------------- VMware NAT Network ----------------
+
+           [Host Machine - Windows OS]
              (Browser / Admin Tools)
                       |
-                      | 8000/TCP (Splunk Web)
+                      | 8000/TCP (Splunk Web UI via Host Browser)
                       v
             +----------------------+
             |   Splunk Server VM   |
