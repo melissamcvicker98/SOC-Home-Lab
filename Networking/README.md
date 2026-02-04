@@ -83,12 +83,12 @@ Block / Restricted flows:
 ---
 
 ### Validation and Testing 
-## Connectivity Verification 
+Connectivity Verification 
 - Confirmed Windows 11 can reach Splunk on port 9997
 - Verified log ingestion in Splunk index
 - Confirmed Sysmon network events are searchable
 
-## Test Traffic Generated 
+ Test Traffic Generated 
 - Web browsing
 - DNS lookups
 - Software downloads
