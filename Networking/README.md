@@ -106,7 +106,7 @@ Block / Restricted flows:
 ---
 
 ### Why This Matters in a SOC Role
-# Understanding network architecture and traffic is critcal for: 
+Understanding network architecture and traffic is critcal for: 
 - Identifying malicious communication
 - Supporting incident repsonse investigations
 - Designing effective detections
