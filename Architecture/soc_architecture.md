@@ -19,17 +19,17 @@
 For each alert:
 - Log source was identified
 - Event fields analyzed
-- Indicators of compromise (IOCs) reviewe
+- Indicators of compromise (IOCs) revieweD
 - False positive vs true positive documentation
 
 ---
 
 ## Risk & Business Impact
 Each detection includes:
--Affected asset 
-Potential impact if undetected 
-Likelihood and serverity assessment 
-Business risk explanation 
+- Affected asset 
+- Potential impact if undetected 
+- Likelihood and serverity assessment 
+- Business risk explanation 
 
 ---
 
@@ -41,14 +41,14 @@ Detections are mapped to:
 --- 
 
 ## Tools Used
--Splunk Enterprise
--Sysmon
--Windows Event Logs
--Kali Linux 
+- Splunk Enterprise
+- Sysmon
+- Windows Event Logs
+- Kali Linux 
 
 ---
 
 ## Key Takeaways 
--Improved understanding of SOC workflowd
-Experience prioritizing alerts based on risk 
-Strengthened ability to translate technical findings into busines impact 
+- Improved understanding of SOC workflow
+- Experience prioritizing alerts based on risk 
+- Strengthened ability to translate technical findings into business impact 
